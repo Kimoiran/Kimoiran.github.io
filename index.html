@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+
+<script>
+    function displayDateTime() {
+        var now = new Date();
+        var dayOfWeek = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"][now.getDay()];
+        var year = now.getFullYear();
+        var month = ("0" + (now.getMonth() + 1)).slice(-2); // 获取月份并补零
+        var date = ("0" + now.getDate()).slice(-2); // 获取日期并补零
+        var hours = ("0" + now.getHours()).slice(-2);
+        var minutes = ("0" + now.getMinutes()).slice(-2);
+        var seconds = ("0" + now.getSeconds()).slice(-2);
+
+        var formattedDateTime = dayOfWeek + "，" + year + "年" + month + "月" + date + "日 " + hours + "时" + minutes + "分" + seconds + "秒";
+
+        document.getElementById("currentDateTime").innerHTML = formattedDateTime;
+    }
+
+    setInterval(displayDateTime, 1000); // 每隔一秒更新一次
+</script>
+
+<style>
+    #currentDateTime {
+            color: white; /* 将此处的颜色值替换为你想要的颜色 */
+    }
+
+    p {
+      font-size: 2em; /* 这里也可以使用其他单位 */
+    }
+    .center-img-container {
+    text-align: center;
+    }
+    .parent-element {
+    text-align: center;
+    }
+    body {
+    background-image: url('24.jpg');
+    background-repeat: no-repeat; /* 图片不重复 */
+    /*background-size: cover;  背景图片填充以适应容器大小 */
+    /*background-position: center;  图片居中 */
+    }
+
+    #myTitle {
+            color: #FF00FF; /* 将此处的颜色值替换为你想要的颜色 */
+    }
+
+    a:link {
+      color: #BBFFFF;
+    }
+    a:visited {
+      color: #BBFFFF;
+    }
+    a:hover {
+      color: #ff6600;
+    }
+    a:active {
+      color: #0099ff;
+    }
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimoiran's Website</title>
+</head>
+<body>
+
+<div style="text-align: center;" id="currentDateTime">当前时间将在這裡显示...</div>
+
+<div>
+    Form Kimoiran
+</div>
+
+
+<h1 id="myTitle" style="text-align: center;">Welcome to Kimoiran's Website</h1>
+
+<div class="parent-element">
+    <a href="https://webnavigate.github.io/Software">常用软件下载</a>
+</div>
+<br>
+<div class="parent-element">
+    <a href="http://192.168.7.221/">上网登录窗</a>
+</div>
+<br>
+<div class="parent-element">
+    <a href="https://www.csust.edu.cn/">长沙理工大学</a>
+</div>
+<br>
+<div class="parent-element">
+    <a href="https://www.qidian.com/all/">起点中文网</a>
+</div>
+<br>
+<div class="parent-element">
+    <a href="http://noi.openjudge.cn/">OpenJudge</a>
+</div>
+<br>
+<div class="parent-element">
+    <a href="https://www.vilipix.com/">ViLiPix</a>
+</div>
+<br>
+<div class="parent-element">
+    <a href="https://bilibili.com/">BiLiBiLi</a>
+</div>
+<br>
+<div class="parent-element">
+    <a href="https://tongyi.aliyun.com/qianwen/">通义千问</a>
+</div>
+<br>
+<div class="parent-element">
+    <a href="https://10.64.70.99">谢老师的网站</a>
+</div>
+<br>
+
+
+
+</body>
+</html>

@@ -57,15 +57,37 @@
             margin-top: 20px;
         }
 
+        .bing-search-container form {
+            display: inline-flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
         .bing-search-container input[type="text"] {
-            width: 300px;
-            padding: 10px;
-            font-size: 16px;
+            width: 200px;
+            padding: 8px 12px;
+            font-size: 14px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            color: white;
         }
 
         .bing-search-container input[type="submit"] {
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 8px 16px;
+            font-size: 14px;
+            border: none;
+            background-color: #0078D7;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .bing-search-container input[type="submit"]:hover {
+            background-color: #005A9E;
         }
     </style>
 </head>
@@ -98,10 +120,6 @@
     <br>
     <div class="parent-element">
         <a href="https://www.qidian.com/all/">起点中文网</a>
-    </div>
-    <br>
-    <div class="parent-element">
-        <a href="http://noi.openjudge.cn/">OpenJudge</a>
     </div>
     <br>
     <div class="parent-element">

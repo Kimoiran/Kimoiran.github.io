@@ -51,6 +51,22 @@
         a:active {
             color: #0099ff;
         }
+
+        .bing-search-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .bing-search-container input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .bing-search-container input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
@@ -59,6 +75,15 @@
         Form Kimoiran
     </div>
     <h1 id="myTitle" style="text-align: center;">Welcome to Kimoiran's Website</h1>
+
+    <!-- Bing 搜索框 -->
+    <div class="bing-search-container">
+        <form action="https://www.bing.com/search" method="get">
+            <input type="text" name="q" placeholder="搜索 Bing...">
+            <input type="submit" value="搜索">
+        </form>
+    </div>
+
     <div class="parent-element">
         <a href="https://webnavigate.github.io/Software">常用软件下载</a>
     </div>

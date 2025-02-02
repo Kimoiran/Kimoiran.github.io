@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkkimoiran_website"]=self["webpackChunkkimoiran_website"]||[]).push([[594],{609:function(n,e,t){t.r(e),t.d(e,{default:function(){return o}});var u=t(641);const a={class:"about"};function i(n,e){return(0,u.uX)(),(0,u.CE)("div",a,e[0]||(e[0]=[(0,u.Lk)("h1",null,"This is an about page",-1)]))}var r=t(262);const s={},c=(0,r.A)(s,[["render",i]]);var o=c}}]);
+//# sourceMappingURL=about.f6edc2ea.js.map

@@ -3,25 +3,6 @@
 		<div class="current-time">{{ formattedTime }}</div>
 
 		<h1 class="main-title">Welcome to Kimoiran's Website</h1>
-
-		<el-row justify="center" style="margin: 40px 0">
-			<el-input
-				v-model="searchQuery"
-				placeholder="搜索 Bing..."
-				style="
-					width: 50%;
-					border-radius: 25px;
-					height: 50px;
-					background-color: rgba(255, 255, 255, 0.5);
-				"
-				@keyup.enter="handleSearch"
-			>
-				<template #append>
-					<el-button type="primary" @click="handleSearch">搜索</el-button>
-				</template>
-			</el-input>
-		</el-row>
-
 		<el-row :gutter="20" justify="center">
 			<el-col
 				:xs="24"
